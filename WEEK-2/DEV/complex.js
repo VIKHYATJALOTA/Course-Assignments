@@ -47,12 +47,38 @@
 
 
 //q3 with filters 
-function isEven(num){
-    if(num%2==0)
-        return num;
+// function isEven(num){
+//     if(num%2==0)
+//         return num;
+// }
+
+// let numbers = [1,2,3,4,5,6,7,8,9,10];
+
+// result = numbers.filter(isEven);
+// console.log(result);
+
+
+//q4
+
+function age(users){
+    return users.filter(agecheck);
+
+    function agecheck(ages){
+        if (ages.age>18)
+        return ages    
+        }
+
 }
 
-let numbers = [1,2,3,4,5,6,7,8,9,10];
+const users = [{
+		name: "Harkirat",
+		age: 17
+	}, {
+		name: "Vikhyat",
+		age: 23
+	}
+]
 
-result = numbers.filter(isEven);
+result = age(users);
 console.log(result);
+
