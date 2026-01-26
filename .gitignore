@@ -1,1 +1,20 @@
+# --- C++ / DSA ---
+# Ignore executables without extensions
+*
+!*/
+!*.cpp
+!*.h
+!*.hpp
+
+# Ignore common compiled formats
+*.out
+*.exe
+*.o
+
+# --- Web Dev ---
+node_modules/
+.env
+dist/
+
+# --- macOS System Files ---
 .DS_Store
